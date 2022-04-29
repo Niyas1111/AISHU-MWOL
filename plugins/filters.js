@@ -96,7 +96,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('Prince_bgms/menti
 await message.client.sendMessage(message.jid, fs.readFileSync('Prince_bgms/mp3'), MessageType.audio, { mimetype: Mimetype.mpAudio,duration: Config.SAID, contextInfo: { forwardingScore: 5, isForwarded: true }, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
-const array = ['Hi','spirit','Prince','Xxx','Cr7','fan','Vazha','Umbi','look','Lub','alive','Mrng','Sarasu','Pm','mp4','Kanjav','Name','owner','Intro','Pottan','Indro','hi','Oo','tts','single','Good night','menu','Hallo','https','Song','Oii','Umma','Hai','Sed','prince','Power','Poda','Ayin','bot','sed','Pavam','song','Pinne','photo','Okay','Ok','Noob','Nee','nanban','Myre','mp3','Mm','Bot','Love','Line','Killadi','kanjav','ith','I love you','Hlo','Mair','help','Ha','group','bye','Bro','Bgm','bgm','Baby','Aysheri','ayn']
+const array = ['Hi','spirit','Prince','Xxx','Cr7','fan','Vazha','Umbi','look','Lub','alive','Mrng','Sarasu','Pm','mp4','Kanjav','Name','owner','Intro','Pottan','Indro','hi','Oo','tts','single','Good night','menu','Hallo','https','Song','Oii','Umma','Hai','Sed','prince','Power','Poda','Ayin','bot','sed','Pavam','song','Pinne','photo','Okay','Ok','Noob','Nee','nanban','Myre','mp3','Mm','Bot','Love','Eda','Ayshari','Video','Aa','song','cyber','Line','Killadi','kanjav','ith','I love you','Hlo','Mair','help','Ha','group','bye','Bro','Bgm','bgm','Baby','Aysheri','ayn']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
